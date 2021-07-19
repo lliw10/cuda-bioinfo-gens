@@ -1,0 +1,357 @@
+@charset "utf-8";
+
+body {
+	background-color: #CCCCCC;
+	font-family: Verdana, Arial;
+	font-size: 12px;
+	padding: 0px;
+  	height: 100%;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.fundo_topo{
+	background: url("../images/fundo_topo.gif") top left repeat-x; 
+	height: 18px;
+}
+
+.espacador{
+	background-color: #b31b1b; 
+	height: 1px;
+}
+.texto {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+#principal {
+	background-color: #FFFFFF;
+	padding: 10px;
+	width: 900px;
+	clear: both;
+	position: relative;
+}
+
+#corpo {
+	padding: 10px;
+	clear: both;
+	text-align: left;
+	position: relative;
+}
+
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #3d4ca1;
+	font-weight: bold;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.campos {
+	border-style: none;
+	font-family: Verdana, Arial;
+	font-size: 11px;
+	height: 18px;
+	padding: 0px 0px 0px 0px;
+	border: 1px solid #BEC3D7;
+}
+
+.obs fieldset legend {
+	font-weight: bold;
+	font-size: 10pt;
+	color: #000000;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+fieldset table { 
+	border-collapse: separate; 
+	border-spacing: 0; 
+	*border-collapse: collapse; /* hack is needed for IE7 also */
+}
+
+fieldset td { 
+	border-top: 2px solid white; 
+	border-bottom: 3px solid white; 
+	*position: relative;
+}
+
+
+#content{
+    padding: 20px;
+    font-family: geneva, arial;
+    font-size: 14px;
+}
+
+#content table tr td{
+    vertical-align: top;
+    font-size: 14px;
+}
+
+#content table input, #content table textarea{
+    border: 1px solid #000;
+}
+
+div.fieldWithErrors input, div.fieldWithErrors textarea{
+    background-color: #f6d6f6;
+}
+
+a{
+    color:#c00000;
+
+}
+
+table#subscriptions td, table#subscriptions th, table#teachers td, table#teachers th{
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #000;
+    margin: 0;
+}
+
+table#subscriptions, table#teachers{
+    border-collapse: collapse;
+}
+
+h2{
+    font-size: 14px;
+}
+
+h1 {
+    font-size:18px;
+}
+
+#login {
+    font-family: geneva, arial;
+    width: 250px; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+#login #loginUsuario {
+	font-family: geneva, arial;
+    width: 200px; 
+    margin: 0 auto; 
+	text-align: left;
+}
+
+#login #loginSenha{
+	font-family: geneva, arial;
+    width: 200px; 
+    margin: 0 auto; 
+	text-align: left;
+}
+
+.errorExplanation { 
+	color: red
+}
+
+#forgot {
+    font-family: geneva, arial;
+    width: 300px; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+#forgot #forgotEmail {
+	font-family: geneva, arial;
+    width: 200px; 
+    margin: 0 auto; 
+	text-align: left;
+}
+
+
+/*#########################################*/ 
+/* GRID*/
+/*#########################################*/
+.grid {
+	background-color: #999999;
+	border-spacing: 0px;
+	text-align:left;
+	border-collapse:collapse;
+	border: 1px solid #999999;
+	font-size:11px;
+}
+
+
+.grid a:link {
+	font-family: Verdana, Arial;
+	color: #000000;
+	text-decoration: none;
+}
+
+.grid a:visited {
+	font-family: Verdana, Arial;
+	color: #000000;
+	text-decoration: none;
+}
+
+.grid a:hover {
+	font-family: Verdana, Arial;
+	color: #aa0000;
+	text-decoration: none;
+}
+
+.grid thead tr {
+	font-family: Verdana, Arial;
+	font-weight: bold;
+	color: #000000;
+	background: #CCCCCC;
+	border: 1px solid #999999;
+}
+
+.grid tr th {
+	font-family: Verdana, Arial;
+	font-weight: bold;
+	color: #000000;
+	background: #FFDE03;
+	border: 1px solid #999999;
+	text-align:left;
+}
+
+.grid thead td {
+	border: 1px solid #999999;
+	padding: 3px;
+}
+
+.grid td {
+	border: 1px solid #999999;
+	padding: 3px;
+}
+
+.grid tbody tr {
+	font-family: Verdana, Arial;
+	font-weight: normal;
+	color: #000000;
+	background: #FFFFFF;
+	text-align:left;
+}
+
+.grid tbody td {
+	padding: 2px;
+}
+
+.grid tbody tr:hover {
+	font-family: Verdana, Arial;
+	font-weight: normal;
+	color: #000000;
+	background: #E9E9E9;
+}
+
+.grid tfoot tr {
+	font-family: Verdana, Arial;
+	font-weight: bold;
+	color: #000000;
+	background: #FFFFFF;
+}
+
+.subgrid {
+	background-color: #F58220;
+}
+
+.subgrid thead tr {
+	font-family: Verdana, Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #F58220;
+}
+
+.subgrid tr th {
+	font-family: Verdana, Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #F58220;
+}
+
+.subgrid thead td {
+	border: none;
+}
+
+.subgrid thead tr:hover {
+	font-family: Verdana, Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #F58220;
+}
+
+.subgrid tbody tr {
+	font-family: Verdana, Arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	background: #FFFFFF;
+}
+
+.subgrid tbody tr:hover {
+	font-family: Verdana, Arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	background: #FFFFFF;
+}
+
+/*portlet*/
+.column {
+	width: 250px;
+	float: left;
+	/*padding-bottom: 100px;*/
+}
+
+.portlet {
+	margin: 0 1em 1em 0;
+}
+
+.portlet-header {
+	margin: 0.3em;
+	padding-bottom: 4px;
+	padding-left: 0.2em;
+}
+
+.portlet-header .ui-icon {
+	float: right;
+}
+
+.portlet-content {
+	padding: 0.4em;
+}
+
+.ui-sortable-placeholder {
+	border: 1px dotted black;
+	visibility: visible !important;
+	height: 50px !important;
+}
+
+.ui-sortable-placeholder * {
+	visibility: hidden;
+}
+
+.display {
+    display:none;
+}
+
+.scrollDiv
+{
+    width:600px;
+    height:500px;
+    margin-top: 20px;
+    background-color:#f1f1f1;
+    overflow-y: scroll;
+    max-width:700px;
+    max-height:400px;
+}

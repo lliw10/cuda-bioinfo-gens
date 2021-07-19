@@ -1,0 +1,11 @@
+<Context
+    unpackWAR="true"
+    antiJarLocking="false"
+    antiResourceLocking="false">
+    
+    <Environment
+        name="server.remote.gene.analisys.url"
+        value="http://localhost:8080/ServerRemoteGeneAnalisys"
+        type="java.lang.String" />
+    
+</Context>

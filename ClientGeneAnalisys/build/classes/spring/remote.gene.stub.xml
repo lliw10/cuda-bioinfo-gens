@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE
+    beans PUBLIC
+    "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+	<bean id="remote.gene.stub" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="proxyInterfaces"
+			value="br.usp.ime.bioinfogen.GeneAnalisysExecutorFacade" />
+		<property name="targetSource">
+			<bean class="org.springframework.aop.target.PrototypeTargetSource">
+				<property name="targetBeanName">
+					<value>remote.gene.stub.target</value>
+				</property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean class="org.springframework.web.context.support.ServletContextPropertyPlaceholderConfigurer">
+		<property name="ignoreResourceNotFound" value="false" />
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+		<property name="searchSystemEnvironment" value="true" />
+		<property name="locations">
+        	<value>classpath:remote.server.properties</value>
+    	</property>
+	</bean>
+	
+	<bean id="url.remote.gene.factory" 
+		singleton="true" 
+		class="br.usp.ime.bioinfogen.remote.BaseUrlFactoryBean">
+				<constructor-arg value="${server.remote.gene.analisys.url}"/>
+				<constructor-arg value="/service.gene" />				
+	</bean>
+			
+	<bean id="remote.gene.stub.target"
+		class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean"
+		singleton="false">
+		<property name="serviceUrl" ref="url.remote.gene.factory" />
+		<property name="serviceInterface"
+			value="br.usp.ime.bioinfogen.GeneAnalisysExecutorFacade" />
+	</bean>
+
+	<alias alias="gene.analisys.facade" name="remote.gene.stub" />
+
+	<bean id="remote.gene.analisys.facade" class="br.usp.ime.bioinfogen.RemoteGeneAnalisysFacade"
+		lazy-init="false">
+		<constructor-arg ref="gene.analisys.facade" />
+	</bean>
+
+</beans>

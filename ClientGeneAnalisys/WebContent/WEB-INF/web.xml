@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:javaee="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	id="WebApp_ID" version="2.4">
+	<display-name>ClientGeneAnalisys</display-name>
+
+	<filter>
+        <filter-name>
+            vraptor
+        </filter-name>
+        <filter-class>
+            br.com.caelum.vraptor.VRaptor
+        </filter-class>
+    </filter>
+    
+    <filter-mapping>
+        <filter-name>
+            vraptor
+        </filter-name>
+        <url-pattern>
+            /*
+        </url-pattern>
+        <dispatcher>
+            FORWARD
+        </dispatcher>
+        <dispatcher>
+            REQUEST
+        </dispatcher>
+    </filter-mapping>	  
+     
+    <context-param>
+        <param-name>
+            br.com.caelum.vraptor.provider
+        </param-name>
+        <param-value>
+    		br.usp.ime.bioinfogen.web.providers.ApplicationSpringProvider    
+        </param-value>
+    </context-param>
+    
+     <context-param>
+        <param-name>
+            br.com.caelum.vraptor.packages
+        </param-name>
+        <param-value>
+            br.usp.ime.bioinfogen.web.controllers,
+            br.com.caelum.vraptor.converter.l10n
+        </param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>
+            javax.servlet.jsp.jstl.fmt.locale
+        </param-name>
+        <param-value>
+        	pt_BR,
+        </param-value>
+    </context-param>
+    <context-param>
+        <param-name>
+            javax.servlet.jsp.jstl.fmt.localizationContext
+        </param-name>
+        <param-value>
+            messages_pt_BR
+        </param-value>           
+    </context-param>
+  
+</web-app>

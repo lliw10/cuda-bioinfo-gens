@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE
+    beans PUBLIC
+    "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+	<!-- Required use of Simple AsyncTask to release native resources allocated 
+		after task execution -->
+	<bean id="taskExecutor" lazy-init="false" singleton="true"
+		class="org.springframework.core.task.SimpleAsyncTaskExecutor">
+		<property name="concurrencyLimit" value="10" />
+		<property name="daemon" value="true" />
+		<property name="threadNamePrefix" value="BioinfoNativeTask-" />
+	</bean>
+
+	<bean id="execution.manager" lazy-init="false" singleton="true"
+		class="br.usp.ime.bioinfogen.ExecutionManager">
+		<constructor-arg ref="taskExecutor" />
+	</bean>
+
+	<bean id="gene.analisys.executor.facade" lazy-init="false"
+		class="br.usp.ime.bioinfogen.GeneAnalisysExecutorFacadeImpl">
+		<constructor-arg ref="execution.manager" />
+	</bean>
+
+	<bean id="service.gene.skeleton" name="/service.gene" lazy-init="false"
+		class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
+		<property name="service" ref="gene.analisys.executor.facade" />
+		<property name="serviceInterface"
+			value="br.usp.ime.bioinfogen.GeneAnalisysExecutorFacade" />
+	</bean>
+
+</beans>

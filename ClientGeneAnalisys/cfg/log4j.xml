@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+	
+    <!-- ============================== -->
+    <!-- Append messages to the console -->
+    <!-- ============================== -->
+    <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+        <param name="Target" value="System.out"/>
+        <param name="Threshold" value="DEBUG"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p [%t] [%c#%M] %m%n"/>
+        </layout>
+    </appender>
+	<appender name="GENE_ANALISYS" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="Threshold" value="DEBUG" />
+		<param name="File" value="${catalina.home}/logs/gene_analisys.log"/>
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<param name="Append" value="true"/>
+		<param name="ImmediateFlush" value="true"/>
+		<layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p [%t] [%c#%M] %m%n"/>
+		</layout>
+	</appender>
+		
+    <!-- ================ -->
+    <!-- Limit categories -->
+    <!-- ================ -->
+    <logger name="org.springframework" additivity="false">
+        <level value="ERROR"/>
+		<appender-ref ref="GENE_ANALISYS"/>
+    </logger>
+    <logger name="org.apache.commons.httpclient" additivity="false">
+        <level value="ERROR"/>
+        <appender-ref ref="GENE_ANALISYS"/>
+    </logger>
+    <logger name="httpclient.wire" additivity="false">
+        <level value="ERROR"/>
+        <appender-ref ref="GENE_ANALISYS"/>
+    </logger>
+   
+    <logger name="br.usp.ime.bioinfogen" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="GENE_ANALISYS"/>
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+    
+    <!-- ======================= -->
+    <!-- Setup the Root category -->
+    <!-- ======================= -->
+    <root>
+        <level value="INFO"/>
+        <appender-ref ref="CONSOLE"/>
+		<appender-ref ref="GENE_ANALISYS"/>
+    </root>
+</log4j:configuration>
