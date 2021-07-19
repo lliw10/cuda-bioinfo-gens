@@ -1,0 +1,31 @@
+00000000000000000000 
+Attractor 1 is of length 1
+
+01000000100111100111 
+Attractor 2 is of length 1
+
+00000000000000100000 
+Attractor 3 is of length 1
+
+11000010100111100101 
+Attractor 4 is of length 1
+
+11000010110111100101 
+Attractor 5 is of length 1
+
+00000000100111111111 
+Attractor 6 is of length 1
+
+00110000001010110101 
+Attractor 7 is of length 1
+
+00000000101111111111 
+Attractor 8 is of length 1
+
+01100001101011100111 
+Attractor 9 is of length 1
+
+00100000101111111111 
+Attractor 10 is of length 1
+
+The number of attractors is 10

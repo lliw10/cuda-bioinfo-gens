@@ -1,0 +1,119 @@
+#Executing: [ParallelGeneNetworkExecutor]
+There is 1 device supporting CUDA
+
+Properties for device [0] .........: GeForce 310M
+
+Clock rate: 1530000
+  CUDA Capability Major revision number: 1
+  CUDA Capability Minor revision number: 2
+Max Grid size: [65535, 65535, 1]
+Max Thread dim: [512, 512, 64]
+Max Thread per block: 512
+Total number of registers available per block: 16384
+Max multi processor count: 2
+Number of cores: 16
+Warp Size: 32
+Max total const memory: 65536
+Max global memory: 536477696
+Can map host memory: 1
+Device overlap: 1
+Run time limit on kernels: No
+  Integrated: No
+  Support host page-locked memory mapping: Yes
+  Compute mode: Default (multiple host threads can use this device simultaneously)
+..........................................................
+
+Matrix read 0
+
+ ::Matrix read :: 
+
+ 0 0 0 0-1 0 0 0 0 0-1 0 0-1-1 0 0 0 1 0 0
+ 1 0 0 0-1 1 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0
+ 0 0 0 1-1 0 1 0 0 0 1 0 1 0 0-1 0 0 0 0 0
+ 0 0 0 0 0 0-1 0 0 0 0 0 0 1 0-1 0 0 0 1 1
+ 0 1 0 0 0 0 0 0 1-1 0 0 1 0 1 0 0 1 0 0 0
+ 1 0-1 0 0 0 0 0 0 0 0-1 0 0 0-1-1 0 0 1 0
+-1 0 0 0 0 1 0 0 0 0 0-1 0 0-1 0 0 0 0 0 0
+ 0 0 0 0-1 0 0-1 0 0 0 0-1 0 0 1 0 0 0 1 0
+ 0 1 0 0 1 0 0 0-1 0 0 1 1 0 0 0 0 0 0 0 0
+ 0 0 0 1 0 0 1 0 0 0 0-1 0 0-1-1 0 0 0 0 0
+ 0 0-1 0 0 1 1-1 0 0 0 0 0-1 0 0 1 0 0 0 0
+ 0 0-1 0-1 1-1 0 0 0 0 0-1 0 0-1 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 1 0 0 0-1-1-1 0 0 1 0 0 0
+ 0 0 0 0 1 0-1 0-1 0-1 0 0 0 0 1 0 0 0 1 0
+ 0 0 0 1 0 0 1 0 0 0 0 0 1 0 0 1 0 0 0-1 1
+ 1 0 0 0 0 0 0-1 0-1-1 0 0-1 0-1 0 0 0 0 0
+ 0 0 1 0 0 0-1 0 0 0 0 1-1 0 0 0 0 0 0-1 0
+-1 0 0-1 1 0 0 0 0 0 0 0 0 0 0 0 0 0-1 1 0
+ 0 0 0 1 1 0-1-1 0 0 0 0 0 0 0 0 0 0 0-1 0
+-1 0 0 0-1 0 1 0 1 0-1 0 0 0 1 0 0 0 0 0 0
+ 0 0 0-1 0 0 0 0 0-1 0-1-1 0 0 0 0 0 0-1-1
+
+----------- Start: executeFindAttractorsKernel --------- 
+
+Number of genes: 21 
+State Space Size (2^21) = 2097152 
+Total Memory required (1764  + 16777216) = 16.001682 MB 
+Block division factor: 16 
+Threads division factor: 4 
+Number Of GPU Threads: 2 
+
+
+--------------- [1] Device - Running 2 OMPDeviceThreads and 1 OMPResultThread ---------------
+
+OMP[Device]Thread[0] - Started...
+OMP[Device]Thread[1] - Started...
+OMPResultThread[2] - Started...
+OMPResultThread[2] - sleeping 3 seconds. Queue size[0].
+Device[0] - Number of states to analize: 1048576 
+Device[0] - Number of blocks used: 4096 
+Device[0] - Number of threads used: 128 
+Device[0] - Iterations: 2 + (rest: 0) = 2 
+Device[1] - Number of states to analize: 1048576 
+Device[1] - Number of blocks used: 4096 
+Device[1] - Number of threads used: 128 
+Device[1] - Iterations: 2 + (rest: 0) = 2 
+Device[1] - using device id[0] unless 1. DeviceCount is [1].
+Device[0] - Workspace StartIdx[0], EndIdx[2], startOffset[0] , InitError: 0
+Device[0] - CountSolutionsPartial [Size: 524288] [MEM: 4.00 MB] 	 Kernel[Blocks: 4096,  Threads: 128] 
+Device[1] - Workspace StartIdx[0], EndIdx[2], startOffset[1048576] , InitError: 0
+Device[1] - CountSolutionsPartial [Size: 524288] [MEM: 4.00 MB] 	 Kernel[Blocks: 4096,  Threads: 128] 
+OMPResultThread[2] - wake up. Queue [0], FinishCount[0/2].
+OMPResultThread[2] - sleeping 3 seconds. Queue size[0].
+Device[1] - Iteration 1/2 [50.00%] - kernel general	It. Kernel Time(s): 3.260719	Spent Time(s): 3.010000	N. Attr: 0 	Queue: 1
+Device[0] - Iteration 1/2 [50.00%] - kernel general	It. Kernel Time(s): 4.961181	Spent Time(s): 4.820000	N. Attr: 0 	Queue: 2
+OMPResultThread[2] - wake up. Queue [2], FinishCount[0/2].
+OMPResultThread[2] - sleeping 3 seconds. Queue size[0].
+Device[1] - Iteration 2/2 [100.00%] - kernel general	It. Kernel Time(s): 3.266168	Spent Time(s): 3.860000	N. Attr: 71 	Queue: 1
+Device[1] - kernelFindAttractors total time (s): 6.529011 
+OMP[Device]Thread[1] - Finish
+OMPThread[1] - Notify Progress Finish
+OMPThread[1] - End...
+
+Device[0] - Iteration 2/2 [100.00%] - kernel general	It. Kernel Time(s): 1.570707	Spent Time(s): 2.070000	N. Attr: 71 	Queue: 2
+Device[0] - kernelFindAttractors total time (s): 6.535423 
+OMP[Device]Thread[0] - Finish
+OMPThread[0] - Notify Progress Finish
+OMPThread[0] - End...
+
+OMPResultThread[2] - wake up. Queue [2], FinishCount[2/2].
+OMPResultThread[2] - Finish...
+OMPThread[2] - Notify Progress Finish
+OMPThread[2] - End...
+
+---------------------------------------------------------
+---------------------------------------------------------
+
+Number of Genes: 21, Number of States: 2097152, Number of Attractors: 72 
+#ResultStatisticsTitle: NUM_GENES	SPACE_SIZE	NUM_ATTRACTORS	MAX_BASIN_SIZE	KERNEL_TIME(s)	TOTAL_TIME(s)
+#ResultStatistics: 21	2097152	72	253047	13.0644	6.9700
+executeFindAttractorsKernel Device total time (s): 13.064 
+executeFindAttractorsKernel Host total time (s): 6.970 
+executeFindAttractorsKernel Number of Attractors: 72 
+executeFindAttractorsKernel Max Basin Size: 253047 
+
+Matrix[0] ParallelGeneNetworkExecutor
+Total executeFindAttractorsKernel time (s): 6.97
+---------------------------------------------------------
+Releasing cuda resources
+#Total execution time (s): 7.000000

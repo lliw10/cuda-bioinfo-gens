@@ -1,0 +1,114 @@
+#Executing: [ParallelGeneNetworkExecutor]
+There is 1 device supporting CUDA
+
+Properties for device [0] .........: GeForce 310M
+
+Clock rate: 1530000
+  CUDA Capability Major revision number: 1
+  CUDA Capability Minor revision number: 2
+Max Grid size: [65535, 65535, 1]
+Max Thread dim: [512, 512, 64]
+Max Thread per block: 512
+Total number of registers available per block: 16384
+Max multi processor count: 2
+Number of cores: 16
+Warp Size: 32
+Max total const memory: 65536
+Max global memory: 536477696
+Can map host memory: 1
+Device overlap: 1
+Run time limit on kernels: No
+  Integrated: No
+  Support host page-locked memory mapping: Yes
+  Compute mode: Default (multiple host threads can use this device simultaneously)
+..........................................................
+
+Matrix read 0
+
+ ::Matrix read :: 
+
+ 0 0 1 0 1 0 0 0 0 0 1 0 1 0 0-1 0 0 0 0
+ 0 0 1 0 1 0 0 1 0 0 1 0-1 0 0 0-1 0 0 0
+ 0 0 0-1 1 0 0 0 0 1 0 0 0 0-1 1 0 0 1 0
+ 0 0 0-1-1 0 0 0 0 0 0 0 1 0 0 0 0 1-1 1
+ 0 1 0 0 0-1-1 0 0 1 0 0 0 0 0 0 1 0 0 0
+ 0 0 1-1 1 0 0 0 0 0 0 0-1-1 0 0 0 0 0-1
+ 0 0 0 0 1 0 0-1 0 0 0 0 0 0 1 0 0 1 0 1
+ 0 0 0 0 0 0 0 0 0-1 0-1 0 1 1-1 0 0 1 0
+-1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 1 0 0 0
+ 0 0 0 0 0 0 1 0 0 0 0 0 0 0-1-1 0 0 0-1
+ 0 1 0 0-1 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0
+ 0 0-1 0 1 0 0 0 0-1 0 0 0 0 1 0-1 0 0 0
+ 0 0 0 0 0 1 1 0 0-1 0 0 0 0 0-1 0 0 0-1
+ 0 0 0 0 0 1 0-1 0-1 1 0 0-1 0 0-1 0 0 0
+ 1 0 1-1 0 0 0-1 0 0 0 0 1 0 0 0 0 0 0 0
+ 0 0 1 0 0 0 0 0 0 0 0 0 1 1 0 0 0-1 0 1
+-1 0 0 0 0 0 0 0-1 0 0 0 1 0 0-1 0-1 0-1
+ 0 0 0 1 0-1 1 0 0 1 0 1 0 0 1 0 0 0 0 0
+-1 0 0 0-1 0-1 0 0 1 0 0 0 0 0 1 0 0-1 0
+ 1 0-1 0 0 0 1 0 0 0-1 0 0 0 0 0 1 1 0 0
+
+----------- Start: executeFindAttractorsKernel --------- 
+
+Number of genes: 20 
+State Space Size (2^20) = 1048576 
+Total Memory required (1600  + 8388608) = 8.001526 MB 
+Block division factor: 16 
+Threads division factor: 4 
+Number Of GPU Threads: 2 
+
+
+--------------- [1] Device - Running 2 OMPDeviceThreads and 1 OMPResultThread ---------------
+
+OMPResultThread[2] - Started...
+OMPResultThread[2] - sleeping 3 seconds. Queue size[0].
+OMP[Device]Thread[1] - Started...
+OMP[Device]Thread[0] - Started...
+Device[0] - Number of states to analize: 524288 
+Device[0] - Number of blocks used: 4096 
+Device[0] - Number of threads used: 128 
+Device[0] - Iterations: 1 + (rest: 0) = 1 
+Device[1] - Number of states to analize: 524288 
+Device[1] - Number of blocks used: 4096 
+Device[1] - Number of threads used: 128 
+Device[1] - Iterations: 1 + (rest: 0) = 1 
+Device[1] - using device id[0] unless 1. DeviceCount is [1].
+Device[0] - Workspace StartIdx[0], EndIdx[1], startOffset[0] , InitError: 0
+Device[0] - CountSolutionsPartial [Size: 524288] [MEM: 4.00 MB] 	 Kernel[Blocks: 4096,  Threads: 128] 
+Device[1] - Workspace StartIdx[0], EndIdx[1], startOffset[524288] , InitError: 0
+Device[1] - CountSolutionsPartial [Size: 524288] [MEM: 4.00 MB] 	 Kernel[Blocks: 4096,  Threads: 128] 
+OMPResultThread[2] - wake up. Queue [0], FinishCount[0/2].
+OMPResultThread[2] - sleeping 3 seconds. Queue size[0].
+Device[0] - Iteration 1/1 [100.00%] - kernel general	It. Kernel Time(s): 3.652758	Spent Time(s): 4.530000	N. Attr: 0 	Queue: 1
+Device[1] - Iteration 1/1 [100.00%] - kernel general	It. Kernel Time(s): 3.653781	Spent Time(s): 4.530000	N. Attr: 0 	Queue: 2
+Device[0] - kernelFindAttractors total time (s): 3.654516 
+OMP[Device]Thread[0] - Finish
+OMPThread[0] - Notify Progress Finish
+OMPThread[0] - End...
+
+Device[1] - kernelFindAttractors total time (s): 3.654967 
+OMP[Device]Thread[1] - Finish
+OMPThread[1] - Notify Progress Finish
+OMPThread[1] - End...
+
+OMPResultThread[2] - wake up. Queue [2], FinishCount[2/2].
+OMPResultThread[2] - Finish...
+OMPThread[2] - Notify Progress Finish
+OMPThread[2] - End...
+
+---------------------------------------------------------
+---------------------------------------------------------
+
+Number of Genes: 20, Number of States: 1048576, Number of Attractors: 24 
+#ResultStatisticsTitle: NUM_GENES	SPACE_SIZE	NUM_ATTRACTORS	MAX_BASIN_SIZE	KERNEL_TIME(s)	TOTAL_TIME(s)
+#ResultStatistics: 20	1048576	24	376892	7.3095	4.5900
+executeFindAttractorsKernel Device total time (s): 7.309 
+executeFindAttractorsKernel Host total time (s): 4.590 
+executeFindAttractorsKernel Number of Attractors: 24 
+executeFindAttractorsKernel Max Basin Size: 376892 
+
+Matrix[0] ParallelGeneNetworkExecutor
+Total executeFindAttractorsKernel time (s): 4.59
+---------------------------------------------------------
+Releasing cuda resources
+#Total execution time (s): 4.630000

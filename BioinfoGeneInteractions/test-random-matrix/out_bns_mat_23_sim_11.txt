@@ -1,0 +1,70 @@
+00000000000000000000000 
+Attractor 1 is of length 1
+
+00000000000001000000000 
+Attractor 2 is of length 1
+
+11110111100001010000110 
+Attractor 3 is of length 1
+
+11110111100001011000110 
+Attractor 4 is of length 1
+
+00000011000001111000000 
+Attractor 5 is of length 1
+
+11010111100001011001001 
+Attractor 6 is of length 1
+
+11010111100001011000111 
+Attractor 7 is of length 1
+
+11110010100001010000000 
+Attractor 8 is of length 1
+
+01110110100011011010110 
+Attractor 9 is of length 1
+
+01010110100011011010111 
+Attractor 10 is of length 1
+
+11110110100001010000110 
+Attractor 11 is of length 1
+
+11010111100000011001001 
+Attractor 12 is of length 1
+
+11100010100001010000000 
+Attractor 13 is of length 1
+
+11100111100001010000110 
+Attractor 14 is of length 1
+
+11100110100001010000110 
+Attractor 15 is of length 1
+
+11010111100001011000110 
+Attractor 16 is of length 1
+
+01110110101011011010110 
+Attractor 17 is of length 1
+
+01100110100011011010110 
+Attractor 18 is of length 1
+
+11100111100001011000110 
+Attractor 19 is of length 1
+
+01010110101011011010111 
+Attractor 20 is of length 1
+
+01100110101011011010110 
+Attractor 21 is of length 1
+
+11000111100001011000110 
+Attractor 22 is of length 1
+
+11110011101101111000000 
+Attractor 23 is of length 1
+
+The number of attractors is 23

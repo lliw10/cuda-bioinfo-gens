@@ -1,0 +1,12 @@
+#Mon Feb 07 22:13:57 BRST 2011
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.config.gnu.exe.debug.384174368/PATH/delimiter=\:
+environment/project/cdt.managedbuild.config.gnu.exe.debug.384174368/PATH/operation=replace
+environment/project/cdt.managedbuild.config.gnu.exe.debug.384174368/PATH/value=/usr/local/cuda/bin\:/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/usr/games
+environment/project/cdt.managedbuild.config.gnu.exe.debug.384174368/append=true
+environment/project/cdt.managedbuild.config.gnu.exe.debug.384174368/appendContributed=true
+environment/project/cdt.managedbuild.config.gnu.exe.release.811695971/PATH/delimiter=\:
+environment/project/cdt.managedbuild.config.gnu.exe.release.811695971/PATH/operation=replace
+environment/project/cdt.managedbuild.config.gnu.exe.release.811695971/PATH/value=/usr/local/cuda/bin\:/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/usr/games
+environment/project/cdt.managedbuild.config.gnu.exe.release.811695971/append=true
+environment/project/cdt.managedbuild.config.gnu.exe.release.811695971/appendContributed=true

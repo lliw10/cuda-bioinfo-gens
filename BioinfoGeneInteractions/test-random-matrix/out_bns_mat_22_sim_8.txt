@@ -1,0 +1,190 @@
+0000000000000000000000 
+Attractor 1 is of length 1
+
+0100110011111001000101 
+Attractor 2 is of length 1
+
+0110110011101011000100 
+Attractor 3 is of length 1
+
+0000000000000100000000 
+Attractor 4 is of length 1
+
+0110100111101011000110 
+Attractor 5 is of length 1
+
+0110100111101011000100 
+Attractor 6 is of length 1
+
+0110100111101011001000 
+Attractor 7 is of length 1
+
+0100110001101001000100 
+Attractor 8 is of length 1
+
+0110110011101011001000 
+Attractor 9 is of length 1
+
+0111100111101011000110 
+Attractor 10 is of length 1
+
+0100100111111011000101 
+Attractor 11 is of length 1
+
+0110110011101001000110 
+Attractor 12 is of length 1
+
+0110100111111011001000 
+Attractor 13 is of length 1
+
+0110111001101000000100 
+Attractor 14 is of length 1
+
+0110110011101001000100 
+Attractor 15 is of length 1
+
+0110110001101001000100 
+Attractor 16 is of length 1
+
+0110110001101000000000 
+Attractor 17 is of length 1
+
+0101100101111000000001 
+Attractor 18 is of length 1
+
+0111110101101001000110 
+Attractor 19 is of length 1
+
+0100110001111001000101 
+Attractor 20 is of length 1
+
+0110100011101011000100 
+Attractor 21 is of length 1
+
+0110110111101011000110 
+Attractor 22 is of length 1
+
+0100100111111011000100 
+Attractor 23 is of length 1
+
+0101110001111001000101 
+Attractor 24 is of length 1
+
+0110100011101011001000 
+Attractor 25 is of length 1
+
+0110100111111011000100 
+Attractor 26 is of length 1
+
+0100110001101001000101 
+Attractor 27 is of length 1
+
+0111110011101001000110 
+Attractor 28 is of length 1
+
+0100110101111001000101 
+Attractor 29 is of length 1
+
+0111110101101000000010 
+Attractor 30 is of length 1
+
+0111110111101001000110 
+Attractor 31 is of length 1
+
+0111110001101001000110 
+Attractor 32 is of length 1
+
+0100111001101000000100 
+Attractor 33 is of length 1
+
+0110110011101011000110 
+Attractor 34 is of length 1
+
+0101100101111000000101 
+Attractor 35 is of length 1
+
+0110010010101000001010 
+Attractor 36 is of length 1
+
+0110110001101001000000 
+Attractor 37 is of length 1
+
+0101100101111001000101 
+Attractor 38 is of length 1
+
+0100111001101000000101 
+Attractor 39 is of length 1
+
+0111110111101011000110 
+Attractor 40 is of length 1
+
+0101100101111000000000 
+Attractor 41 is of length 1
+
+0101111001111000000101 
+Attractor 42 is of length 1
+
+0111111001101000000110 
+Attractor 43 is of length 1
+
+0101100111111011000100 
+Attractor 44 is of length 1
+
+0111110001101001000010 
+Attractor 45 is of length 1
+
+0111100111111011000100 
+Attractor 46 is of length 1
+
+0111110011101001000010 
+Attractor 47 is of length 1
+
+0110110111100011000110 
+Attractor 48 is of length 1
+
+0111110001101000000010 
+Attractor 49 is of length 1
+
+0101100101111010000101 
+Attractor 50 is of length 1
+
+0110110110100011000110 
+Attractor 51 is of length 1
+
+0111110101101001000010 
+Attractor 52 is of length 1
+
+0111110111101001000010 
+Attractor 53 is of length 1
+
+0100111001111000000101 
+Attractor 54 is of length 1
+
+0110110011101001000010 
+Attractor 55 is of length 1
+
+0101110101111001000101 
+Attractor 56 is of length 1
+
+0110100110100011000110 
+Attractor 57 is of length 1
+
+0101100101111011000101 
+Attractor 58 is of length 1
+
+0100110111111001000101 
+Attractor 59 is of length 1
+
+0101100111111011000101 
+Attractor 60 is of length 1
+
+0110100111100011000110 
+Attractor 61 is of length 1
+
+0111110011111001000010 
+Attractor 62 is of length 1
+
+0111110111111001000010 
+Attractor 63 is of length 1
+
+The number of attractors is 63
